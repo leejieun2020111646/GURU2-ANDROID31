@@ -168,7 +168,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"
                             android:text="남"
-                            android:textSize="20dp"></RadioButton>
+                            android:textSize="20dp">
+                        </RadioButton>
 
                         <RadioButton
                             android:id="@+id/radio_female"
@@ -177,7 +178,8 @@
                             android:layout_marginBottom="5dp"
                             android:checked="true"
                             android:text="여"
-                            android:textSize="20dp"></RadioButton>
+                            android:textSize="20dp">
+                        </RadioButton>
                     </RadioGroup>
                 </LinearLayout>
 
@@ -339,6 +341,87 @@
                         android:textSize="15dp" />
                 </LinearLayout>
 
+                <!--정보수집동의-->
+                <TextView
+                    android:id="@+id/signagree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="정보 수집 동의"
+                    android:textColor="@color/purple_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/agree1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="[필수] 프로펫터 서비스 이용약관"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/agree1_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="보기"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:id="@+id/agree2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="[필수] 개인정보 수집 및 이용약관"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/agree2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="보기"
+                            android:textSize="15dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:id="@+id/agree3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="[선택] 광고성 정보 수신동의"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/agree3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="보기"
+                            android:textSize="15dp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
                 <!--회원가입 버튼-->
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/signupbutton"
@@ -351,6 +434,10 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
+
+
+
+
         </ScrollView>
 
     </LinearLayout>
