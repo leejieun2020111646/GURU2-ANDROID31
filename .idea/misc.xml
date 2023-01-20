@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mayon/AndroidStudioProjects/GuruExample/app/src/main/res/layout/activity_adopt_article.xml" value="0.29713552800342025" />
+        <entry key="..\:/Users/mayon/AndroidStudioProjects/GuruExample/app/src/main/res/layout/activity_adopt_detail.xml" value="0.29713552800342025" />
+        <entry key="..\:/Users/mayon/AndroidStudioProjects/GuruExample/app/src/main/res/layout/activity_adopt_list.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/mayon/AndroidStudioProjects/GuruExample/app/src/main/res/layout/activity_main.xml" value="0.34739583333333335" />
+        <entry key="..\:/Users/mayon/AndroidStudioProjects/GuruExample/app/src/main/res/layout/item_adopt_recycler.xml" value="0.29713552800342025" />
       </map>
     </option>
   </component>
