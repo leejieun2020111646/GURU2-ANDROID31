@@ -38,6 +38,7 @@
                 android:textSize="25dp" />
 
         </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -45,10 +46,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/signNametext"
@@ -104,29 +105,30 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <EditText
-                    android:id="@+id/signBirth"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginRight="10dp"
-                    android:ems="10"
-                    android:hint=" 년(4자)"
-                    android:inputType="textPersonName"
-                    android:text="" />
+                        android:id="@+id/signBirth"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:ems="10"
+                        android:hint=" 년(4자)"
+                        android:inputType="textPersonName"
+                        android:text="" />
 
                     <EditText
                         android:id="@+id/signBirth2"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
-                        android:layout_marginBottom="20dp"
                         android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
                         android:ems="10"
                         android:hint=" 월"
                         android:inputType="textPersonName"
                         android:text="" />
+
                     <EditText
                         android:id="@+id/signBirth3"
                         android:layout_width="100dp"
@@ -153,28 +155,29 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
+
                     <RadioGroup
                         android:id="@+id/radiogroup_gender"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <RadioButton
                             android:id="@+id/radio_male"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"
                             android:text="남"
-                            android:textSize="20dp">
-                        </RadioButton>
+                            android:textSize="20dp"></RadioButton>
+
                         <RadioButton
                             android:id="@+id/radio_female"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"
+                            android:checked="true"
                             android:text="여"
-                            android:textSize="20dp"
-                            android:checked="true">
-                        </RadioButton>
+                            android:textSize="20dp"></RadioButton>
                     </RadioGroup>
                 </LinearLayout>
 
@@ -188,6 +191,7 @@
                     android:textColor="@color/purple_200"
                     android:textSize="20dp"
                     android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/signPW"
                     android:layout_width="wrap_content"
@@ -208,10 +212,12 @@
                     android:textColor="@color/purple_200"
                     android:textSize="20dp"
                     android:textStyle="bold" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <EditText
                         android:id="@+id/signPW2"
                         android:layout_width="wrap_content"
@@ -221,6 +227,7 @@
                         android:hint=" 비밀번호 다시 입력"
                         android:inputType="textPassword"
                         android:text="" />
+
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/pwcheckbutton"
                         android:layout_width="wrap_content"
@@ -242,6 +249,7 @@
                     android:textColor="@color/purple_200"
                     android:textSize="20dp"
                     android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/signmail"
                     android:layout_width="wrap_content"
@@ -262,6 +270,7 @@
                     android:textColor="@color/purple_200"
                     android:textSize="20dp"
                     android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/signphone"
                     android:layout_width="wrap_content"
@@ -282,21 +291,61 @@
                     android:textColor="@color/purple_200"
                     android:textSize="20dp"
                     android:textStyle="bold" />
+
                 <Spinner
                     android:id="@+id/signlocal"
                     android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp" />
+
+                <!--관심동물 선택-->
+                <TextView
+                    android:id="@+id/signanimaltext"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="관심동물"
+                    android:textColor="@color/purple_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
-                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
+                    <CheckBox
+                        android:id="@+id/animal_dog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="강아지"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/animal_cat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="고양이"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/animal_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="기타"
+                        android:textSize="15dp" />
+                </LinearLayout>
 
                 <!--회원가입 버튼-->
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/signupbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:layout_marginTop="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
                     android:text="회원가입"
                     android:textColor="@color/white"
                     android:textSize="16sp"
