@@ -86,7 +86,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="70dp"
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:text=" 프로펫터 "
