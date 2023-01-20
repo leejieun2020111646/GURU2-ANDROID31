@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".Register">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,10 +21,11 @@
                 android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.7"
-                android:text="back"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="뒤로가기"
                 android:textColor="@color/teal_700"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
 
             <TextView
                 android:id="@+id/signup"
@@ -89,6 +90,7 @@
                     android:inputType="textPersonName"
                     android:text="" />
 
+                <!--생년월일-->
                 <TextView
                     android:id="@+id/signBirthtext"
                     android:layout_width="match_parent"
@@ -136,6 +138,47 @@
                         android:text="" />
                 </LinearLayout>
 
+                <!--성별-->
+                <TextView
+                    android:id="@+id/signGendertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="성별"
+                    android:textColor="@color/purple_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:id="@+id/radiogroup_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radio_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="남"
+                            android:textSize="20dp">
+                        </RadioButton>
+                        <RadioButton
+                            android:id="@+id/radio_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="여"
+                            android:textSize="20dp"
+                            android:checked="true">
+                        </RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!--비밀번호-->
                 <TextView
                     android:id="@+id/signPWtext"
                     android:layout_width="match_parent"
@@ -145,8 +188,6 @@
                     android:textColor="@color/purple_200"
                     android:textSize="20dp"
                     android:textStyle="bold" />
-
-
                 <EditText
                     android:id="@+id/signPW"
                     android:layout_width="wrap_content"
@@ -157,6 +198,7 @@
                     android:inputType="textPassword"
                     android:text="" />
 
+                <!--비밀번호 확인-->
                 <TextView
                     android:id="@+id/signPW2text"
                     android:layout_width="match_parent"
@@ -166,12 +208,10 @@
                     android:textColor="@color/purple_200"
                     android:textSize="20dp"
                     android:textStyle="bold" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <EditText
                         android:id="@+id/signPW2"
                         android:layout_width="wrap_content"
@@ -181,7 +221,6 @@
                         android:hint=" 비밀번호 다시 입력"
                         android:inputType="textPassword"
                         android:text="" />
-
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/pwcheckbutton"
                         android:layout_width="wrap_content"
@@ -193,6 +232,7 @@
                         android:textStyle="bold" />
                 </LinearLayout>
 
+                <!--이메일-->
                 <TextView
                     android:id="@+id/signmailtext"
                     android:layout_width="match_parent"
@@ -202,7 +242,6 @@
                     android:textColor="@color/purple_200"
                     android:textSize="20dp"
                     android:textStyle="bold" />
-
                 <EditText
                     android:id="@+id/signmail"
                     android:layout_width="wrap_content"
@@ -213,6 +252,45 @@
                     android:inputType="textPersonName"
                     android:text="" />
 
+                <!--전화번호-->
+                <TextView
+                    android:id="@+id/signphonetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="전화번호"
+                    android:textColor="@color/purple_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/signphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="전화번호"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+                <!--관심지역-->
+                <TextView
+                    android:id="@+id/signlocaltext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="관심지역"
+                    android:textColor="@color/purple_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/signlocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+                <!--회원가입 버튼-->
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/signupbutton"
                     android:layout_width="wrap_content"
