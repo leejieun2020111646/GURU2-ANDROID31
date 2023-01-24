@@ -40,12 +40,13 @@ class AdoptAdapter(private val context: Context) : RecyclerView.Adapter<AdoptAda
         private val txtName: TextView = itemView.findViewById(R.id.tv_rv_name)
         private val txtAge: TextView = itemView.findViewById(R.id.tv_rv_age)
         private val txtInfo: TextView = itemView.findViewById(R.id.tv_rv_info)
-        //private val imgProfile: ImageView = itemView.findViewById(R.id.img_rv_photo)
+        private val imgProfile: ImageView = itemView.findViewById(R.id.img_rv_photo)
 
         fun bind(item: AdoptData) {
             txtName.text = item.name
             txtAge.text = item.age.toString()
-            //Glide.with(itemView).load(item.img).into(imgProfile)
+            txtInfo.text = item.info
+            Glide.with(itemView).load(item.img).into(imgProfile)
             itemView.setOnClickListener {
                 Intent(context, AdoptDetailActivity::class.java).apply {
                     putExtra("data", item)

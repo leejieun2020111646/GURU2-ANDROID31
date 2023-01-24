@@ -13,7 +13,7 @@ class AdoptDetailActivity : AppCompatActivity() {
 
         datas = intent.getSerializableExtra("data") as AdoptData
 
-        //Glide.with(this).load(datas.img).into(img_profile)
+        Glide.with(this).load(datas.img).into(img_profile)
         tv_name.text = datas.name
 
     }

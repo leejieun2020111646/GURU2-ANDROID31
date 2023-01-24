@@ -6,11 +6,13 @@ import android.os.Parcelable
 data class AdoptData (
     val name : String,
     val age : Int,
+    val img : Int,
     val info : String
 
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
+        parcel.readInt(),
         parcel.readInt(),
         parcel.readString() ?: ""
     )
@@ -18,6 +20,7 @@ data class AdoptData (
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
         parcel.writeInt(age)
+        parcel.writeInt(img)
         parcel.writeString(info)
     }
 
