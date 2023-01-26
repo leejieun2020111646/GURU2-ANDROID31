@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_register1.*
 
 class Login : AppCompatActivity() {
 
-    lateinit var Btn_Register: Button //회원가입 버튼 변수ㅠ
+    lateinit var Btn_Register: Button //회원가입 버튼 변수
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -18,5 +18,14 @@ class Login : AppCompatActivity() {
         Btn_Register.setOnClickListener{
             startActivity((Intent(this@Login,Register::class.java)))
         }
+
+
+
+
+
+
+
     }
 }
+
+
