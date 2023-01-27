@@ -5,6 +5,8 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
@@ -25,9 +27,31 @@ class AdoptMain : AppCompatActivity() {
 
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_adopt_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item?.itemId) {
+            R.id.action_main -> {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.action_notice -> {
+                val intent = Intent(this, AdoptNotice::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    //리사이클러뷰에 들어갈 정보
     private fun initRecycler() {
         adoptAdapter = AdoptAdapter(this)
-        //rv_profile.adapter = adoptAdapter
+        rv_profile.adapter = adoptAdapter
 
         datas.apply {
             add(AdoptData(img = R.drawable.pet_img_1_caramel, name = "카라멜", age = 2, info = "-품종 : 믹스 -성별 : 수컷 -나이 : 2세 2개월 -체중 : 5.2kg"))
