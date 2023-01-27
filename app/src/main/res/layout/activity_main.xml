@@ -1,65 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/layout_login"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_profile"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        app:layout_constraintTop_toTopOf="parent" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_adopt_recycler" />
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_btn_login" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layout_adoptlist"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        app:layout_constraintTop_toBottomOf="@id/layout_login">
-
-        <Button
-            android:id="@+id/btn_adoptlist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_btn_adoptlist" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layout_adoptnotice"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        app:layout_constraintTop_toBottomOf="@id/layout_adoptlist">
-
-        <Button
-            android:id="@+id/btn_adoptnotice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_btn_adoptnotice" />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/layout_community"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        app:layout_constraintTop_toBottomOf="@id/layout_adoptnotice">
-
-        <Button
-            android:id="@+id/btn_community"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_btn_community" />
-
-    </LinearLayout>
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

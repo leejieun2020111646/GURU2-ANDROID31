@@ -27,7 +27,7 @@ class AdoptMain : AppCompatActivity() {
 
     private fun initRecycler() {
         adoptAdapter = AdoptAdapter(this)
-        rv_profile.adapter = adoptAdapter
+        //rv_profile.adapter = adoptAdapter
 
         datas.apply {
             add(AdoptData(img = R.drawable.pet_img_1_caramel, name = "카라멜", age = 2, info = "-품종 : 믹스 -성별 : 수컷 -나이 : 2세 2개월 -체중 : 5.2kg"))
