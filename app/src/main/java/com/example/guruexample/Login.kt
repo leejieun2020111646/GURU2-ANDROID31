@@ -14,10 +14,10 @@ import com.google.firebase.firestore.auth.User as User
 class Login : AppCompatActivity() {
 
     //db연결코드1
-    lateinit var db: DBHelper
+    /*lateinit var db: DBHelper
 
     //var users = ArrayList<User>()
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding*/
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +31,7 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
+        /*
         //db연결코드2
         db = DBHelper(this)
 
@@ -55,10 +56,12 @@ class Login : AppCompatActivity() {
 
             }
         }
+        */
 
 
     }
 
+    /*
     //createUser(), 변수명은건들지말기
     @SuppressLint("RestrictedApi")
     private fun createUser(): User? {
@@ -75,7 +78,6 @@ class Login : AppCompatActivity() {
             return null // Null 반환
         }
         return User(id,pw)
-    }
+    }*/
 }
-
 
