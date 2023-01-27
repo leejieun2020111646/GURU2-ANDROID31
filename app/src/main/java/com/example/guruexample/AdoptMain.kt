@@ -27,6 +27,7 @@ class AdoptMain : AppCompatActivity() {
 
     }
 
+    //메뉴
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_adopt_main, menu)
         return true

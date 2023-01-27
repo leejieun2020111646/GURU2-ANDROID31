@@ -6,5 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    로딩(메인) 이미지 넣기-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

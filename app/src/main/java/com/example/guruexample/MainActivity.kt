@@ -16,13 +16,9 @@ import kotlinx.android.synthetic.main.item_adopt_recycler.*
 
 class MainActivity : AppCompatActivity() {
 
-    //lateinit var adoptAdapter: AdoptAdapter
-    //val datas = mutableListOf<AdoptData>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
     }
 
 
