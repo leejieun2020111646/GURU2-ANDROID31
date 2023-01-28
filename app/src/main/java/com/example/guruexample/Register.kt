@@ -2,12 +2,20 @@ package com.example.guruexample
 
 import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
+import android.view.View
+import android.view.ViewParent
+import android.view.WindowId
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import com.example.guruexample.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_register1.*
+import java.text.FieldPosition
 
 class Register : AppCompatActivity() {
 
@@ -28,7 +36,8 @@ class Register : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register1)
 
-        //시작2
+
+        //DB연결
         btnSignup = findViewById(R.id.signupbutton)
         edtId = findViewById(R.id.signID)
         edtPw = findViewById(R.id.signPW)
@@ -61,6 +70,23 @@ class Register : AppCompatActivity() {
             sqlitedb.execSQL("INSERT INTO USERTABLE values ('"+str_id+"','"+str_pw+"','"+str_name+"','"+str_tel+"','"+str_email+"','"+str_gender+"')")
             sqlitedb.close()
         }
+        //DB연결
+
+        //관심지역 Spinner
+        /*var data = listOf("지역 선택","서울","부산","대구","인천","광주","세종","대전","울산","경기","강원","충북","충남","전북","전남","경북","경남","제주")
+        var adapter  =ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data)
+        signlocal.adapter = adapter
+        signlocal.onItemSelectedListener = object :AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                result.text = data.get(position)
+            }
+        }*/
+        var local_data = arrayOf("지역 선택","서울","부산","대구","인천","광주","세종","대전","울산","경기","강원","충북","충남","전북","전남","경북","경남","제주")
+        val local_spinner : Spinner = findViewById(R.id.signlocal)
+        val adapter : ArrayAdapter<String> = ArrayAdapter(this,android.R.layout.simple_list_item_1, local_data)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        local_spinner.adapter = adapter
+    //관심지역 Spinner
 
 
     }

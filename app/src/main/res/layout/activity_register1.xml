@@ -84,10 +84,10 @@
                 <EditText
                     android:id="@+id/signID"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:ems="10"
-                    android:hint=" 아이디"
+                    android:hint="아이디"
                     android:inputType="textPersonName"
                     android:text="" />
 
@@ -102,43 +102,16 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/signBirth"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="20dp"
-                        android:ems="10"
-                        android:hint=" 년(4자)"
-                        android:inputType="textPersonName"
-                        android:text="" />
-
-                    <EditText
-                        android:id="@+id/signBirth2"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="20dp"
-                        android:ems="10"
-                        android:hint=" 월"
-                        android:inputType="textPersonName"
-                        android:text="" />
-
-                    <EditText
-                        android:id="@+id/signBirth3"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:layout_marginBottom="20dp"
-                        android:ems="10"
-                        android:hint=" 일"
-                        android:inputType="textPersonName"
-                        android:text="" />
-                </LinearLayout>
+                <EditText
+                    android:id="@+id/signBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="0000/00/00"
+                    android:inputType="textPersonName"
+                    android:text="" />
 
                 <!--성별-->
                 <TextView
