@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">GuruExample</string>
-    <string name="string_login">회원가입</string>
-    <string name="string_main">입양 가능 동물 확인</string>
+    <string name="string_login">로그인</string>
+    <string name="string_main">홈</string>
+    <string name="string_adoptmain">입양 가능 동물 확인</string>
     <string name="string_adoptnotice">입양 안내</string>
     <string name="string_community">커뮤니티</string>
-    <string name="string_btn_login">회원가입</string>
-    <string name="string_btn_main">입양 가능 동물 확인</string>
-    <string name="string_btn_adoptnotice">입양 안내</string>
-    <string name="string_btn_community">커뮤니티</string>
+
+    <string name="string_edu">입양 교육 받기</string>
+    <string name="string_seoulpet">서울동물복지지원센터</string>
 
 </resources>
