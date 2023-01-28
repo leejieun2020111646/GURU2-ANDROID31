@@ -13,8 +13,8 @@ class DBManager(
     //1. onCreate
     override fun onCreate(db: SQLiteDatabase?) {
         //테이블명 USERTABLE
-        db!!.execSQL("CREATE TABLE USERTABLE (id text, pw text, name text, tel text, email text, gender text)")
-    } //우선 id, pw, 이름, 성별, 전화번호, 이메일
+        db!!.execSQL("CREATE TABLE USERTABLE (id text, pw text, name text, tel text, email text, gender text, birthday text)")
+    } //우선 id, pw, 이름, 성별, 전화번호, 이메일, 생년월일
     //2. onUpgrade
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
     }
