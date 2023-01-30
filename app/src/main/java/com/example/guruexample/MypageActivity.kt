@@ -31,7 +31,7 @@ class MypageActivity : AppCompatActivity() {
     }
     //메뉴
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
+        menuInflater.inflate(R.menu.menu_mypage, menu)
         return true
     }
 

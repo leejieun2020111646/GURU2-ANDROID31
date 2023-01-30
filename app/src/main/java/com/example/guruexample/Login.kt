@@ -3,6 +3,8 @@ package com.example.guruexample
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -59,6 +61,38 @@ class Login : AppCompatActivity() {
         */
 
 
+    }
+
+    //메뉴
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_login, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item?.itemId) {
+            R.id.action_main -> {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.action_mypage -> {
+                val intent = Intent(this, MypageActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.action_adoptmain -> {
+                val intent = Intent(this, AdoptMain::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.action_notice -> {
+                val intent = Intent(this, AdoptNotice::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     /*

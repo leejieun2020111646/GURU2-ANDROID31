@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_main"
+        android:title="@string/string_main" />
+    <item
+        android:id="@+id/action_mypage"
+        android:title="@string/string_mypage" />
+    <item
+        android:id="@+id/action_adoptmain"
+        android:title="@string/string_adoptmain" />
+    <item
+        android:id="@+id/action_notice"
+        android:title="@string/string_adoptnotice" />
+    <!--    <item-->
+    <!--        android:id="@+id/action_community"-->
+    <!--        android:title="@string/string_community" />-->
+</menu>
