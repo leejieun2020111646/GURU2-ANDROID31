@@ -5,8 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityLoading"
-    android:background="@drawable/main_img"
+    android:background="#DC7B53"
     >
 
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="172dp"
+        android:layout_height="238dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/img_load" />
 </LinearLayout>
