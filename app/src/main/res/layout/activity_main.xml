@@ -4,8 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/main_img1"
+    >
 
 <!--    로딩(메인) 이미지 넣기-->
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="362dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="25dp"
+            android:background="#DC7B53"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/img"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="362dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="235dp"
+            android:gravity="center"
+            android:text="입양 / 임시보호"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="418dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="362dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginRight="25dp"
+            android:background="#DC7B53"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/img"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="362dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="170dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="165dp"
+            android:gravity="center"
+            android:text="커뮤니티"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="418dp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="362dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginRight="25dp"
+            android:background="#DC7B53"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/img"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="362dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="94dp"
+            android:gravity="center"
+            android:text="마이페이지"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="418dp">
+
+        </TextView>
+
+    </RelativeLayout >
 </androidx.constraintlayout.widget.ConstraintLayout>
