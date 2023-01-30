@@ -28,11 +28,14 @@
             android:name=".Login"
             android:exported="true" />
 
-        <activity android:name=".Ready"
+        <activity android:name=".Register"
+            android:exported="true"/>
+
+        <activity android:name=".ActivityLoading"
             android:exported="true"/>
 
         <activity
-            android:name=".Register"
+            android:name=".Ready"
             android:exported="true" >
 
             <intent-filter>

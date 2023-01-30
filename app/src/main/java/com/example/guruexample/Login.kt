@@ -26,6 +26,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+
         //회원가입 버튼 클릭 시 페이지 이동(Register로 이동)
         val BtnRegister = findViewById<Button>(R.id.btn_register)
         BtnRegister.setOnClickListener {
