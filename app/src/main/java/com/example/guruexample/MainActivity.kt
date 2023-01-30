@@ -9,6 +9,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item_adopt_recycler.*
 
@@ -16,9 +17,45 @@ import kotlinx.android.synthetic.main.item_adopt_recycler.*
 
 class MainActivity : AppCompatActivity() {
 
+    //뒤로가기 버튼 기능(공통코드)
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item?.itemId){
+            android.R.id.home -> {
+                finish()
+                return true
+            }
+            else -> {
+                return super.onOptionsItemSelected(item)
+            }
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //뒤로가기 버튼
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+        //입양 버튼 클릭 시 페이지 이동
+        val BtnAdopt = findViewById<ImageButton>(R.id.imageButton1)
+        BtnAdopt.setOnClickListener{
+            val intent = Intent(this,AdoptMain::class.java)
+            startActivity(intent)
+        }
+        //커뮤니티 버튼 클릭 시 페이지 이동
+        val BtnComm = findViewById<ImageButton>(R.id.imageButton2)
+        BtnComm.setOnClickListener{
+
+        }
+        //마이페이지 버튼 클릭 시 페이지 이동
+        val BtnMy = findViewById<ImageButton>(R.id.imageButton3)
+        BtnMy.setOnClickListener {
+            val intent = Intent(this,MypageActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 
