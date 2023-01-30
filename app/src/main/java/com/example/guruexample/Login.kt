@@ -2,10 +2,7 @@ package com.example.guruexample
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.database.Cursor
-import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -16,24 +13,12 @@ import com.google.firebase.firestore.auth.User as User
 
 class Login : AppCompatActivity() {
 
-    lateinit var dbManager: DBManager
-    lateinit var sqlitedb: SQLiteDatabase
-    lateinit var lg_id:EditText
-    lateinit var lg_pw:EditText
+    //db연결코드1
+    /*lateinit var db: DBHelper
 
+    //var users = ArrayList<User>()
+    private lateinit var binding: ActivityMainBinding*/
 
-    //뒤로가기 버튼 기능(공통코드)
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item?.itemId){
-            android.R.id.home -> {
-                finish()
-                return true
-            }
-            else -> {
-                return super.onOptionsItemSelected(item)
-            }
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,65 +31,53 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //DB연결
+        /*
+        //db연결코드2
+        db = DBHelper(this)
 
-        val ck_id = findViewById<EditText>(R.id.edit_id)
-        val ck_pw = findViewById<EditText>(R.id.edit_pw)
+        //로그인 버튼 클릭 시 로그인, db
         val BtnLogin = findViewById<Button>(R.id.btn_login)
-
-        //로그인 기능 함수
-        fun login(id:String, pw:String): Boolean {
-            var loginFlag = false
-
-            dbManager = DBManager(this, "USERTABLE", null, 1)
-            sqlitedb = dbManager.readableDatabase
-
-            var cursor:Cursor
-            cursor = sqlitedb.rawQuery("SELECT * FROM USERTABLE WHERE id = '"+ck_id+"' AND pw = '"+ck_pw+"';",null)
-            if(cursor.moveToFirst()){
-                loginFlag = true
-            }
-            return loginFlag
-        }
-
-
-            BtnLogin.setOnClickListener {
-                dbManager = DBManager(this, "USERTABLE", null, 1)
-                sqlitedb = dbManager.readableDatabase
-
-                var get_id : String = ck_id.text.toString()
-                var get_pw : String = ck_pw.text.toString()
-
-                //빈 곳 체크
-                if(get_id.length == 0){
-                    Toast.makeText(this,"아이디를 입력하세요",Toast.LENGTH_SHORT).show()
-                }else if(get_pw.length == 0){
-                    Toast.makeText(this,"비밀번호를 입력하세요",Toast.LENGTH_SHORT).show()
-                }else{ //id,pw 모두 입력된 경우
-                    var cursor:Cursor
-                    cursor = sqlitedb.rawQuery("SELECT id,pw FROM USERTABLE",null)
-
-                    cursor.moveToNext()
-                    val C_id = cursor.getString(0)
-                    val C_pw = cursor.getString(1)
-
-                    if(get_id.equals(C_id) && get_pw.equals(C_pw)) {
-                        Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
-                        //로그인 성공 시 메인페이지로 이동
-                        val intent = Intent(this, AdoptMain::class.java)
-                        startActivity(intent)
+        BtnLogin.setOnClickListener {
+            createUser().let {
+                if (it != null) {
+                    if (db.login(it)) {
+                        Toast.makeText(this, "로그인 성공!", Toast.LENGTH_SHORT).show()
+                        val intent =
+                            Intent(this, AdoptMain::class.java) //AdoptMain로 해뒀는데 어디로 이동할지 수정필요
+                        /*이건 이름 받아와서 ㅇㅇ님 안녕하세요 하는 코드임
+                        intent.putExtra("name", binding.nameEditText.text.toString())
+                        startActivity(intent)*/
+                    } else {
+                        Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show()
                     }
-                    else if(get_id.equals(C_id)==true && get_pw.equals(C_pw)==false ){
-                        Toast.makeText(this, "비밀번호가 틀렸습니다", Toast.LENGTH_SHORT).show()
-                    }
-                    else{
-                        Toast.makeText(this, "아이디가 틀렸습니다", Toast.LENGTH_SHORT).show()
-                    }
+                } else {
+                    Toast.makeText(this, "정보를 모두 입력해주세요", Toast.LENGTH_SHORT).show()
                 }
+
             }
-
-
         }
+        */
+
+
     }
 
+    /*
+    //createUser(), 변수명은건들지말기
+    @SuppressLint("RestrictedApi")
+    private fun createUser(): User? {
+        var read_id = findViewById<EditText>(R.id.edit_id)
+        var id: String = read_id.text.toString()
+
+        var read_pw = findViewById<EditText>(R.id.edit_pw)
+        var pw: String = read_pw.text.toString()
+        //val id = binding.idEditText.text.toString()
+        //val pw = binding.pwEditText.text.toString()
+
+        //val name = binding.nameEditText.text.toString()
+        if (id == "" || pw == "") { // 입력 정보가 하나라도 비어있으면
+            return null // Null 반환
+        }
+        return User(id,pw)
+    }*/
+}
 

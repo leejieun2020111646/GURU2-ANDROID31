@@ -42,6 +42,16 @@ class AdoptNotice : AppCompatActivity() {
                 startActivity(intent)
                 return true
             }
+            R.id.action_login -> {
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.action_mypage -> {
+                val intent = Intent(this, MypageActivity::class.java)
+                startActivity(intent)
+                return true
+            }
             R.id.action_adoptmain -> {
                 val intent = Intent(this, AdoptMain::class.java)
                 startActivity(intent)

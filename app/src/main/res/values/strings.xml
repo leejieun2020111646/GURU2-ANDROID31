@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GuruExample</string>
     <string name="string_login">로그인</string>
+    <string name="string_mypage">마이페이지</string>
     <string name="string_main">홈</string>
     <string name="string_adoptmain">입양 가능 동물 확인</string>
     <string name="string_adoptnotice">입양 안내</string>
