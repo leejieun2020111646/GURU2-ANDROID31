@@ -17,25 +17,12 @@ import kotlinx.android.synthetic.main.item_adopt_recycler.*
 
 class MainActivity : AppCompatActivity() {
 
-    //뒤로가기 버튼 기능(공통코드)
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item?.itemId){
-            android.R.id.home -> {
-                finish()
-                return true
-            }
-            else -> {
-                return super.onOptionsItemSelected(item)
-            }
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //뒤로가기 버튼
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
 
         //입양 버튼 클릭 시 페이지 이동
