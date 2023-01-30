@@ -93,7 +93,7 @@ class Register : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         //관심지역 Spinner
-        var local_data = arrayOf("지역 선택","서울","부산","대구","인천","광주","세종","대전","울산","경기","강원","충북","충남","전북","전남","경북","경남","제주")
+        var local_data = arrayOf("서울","부산","대구","인천","광주","세종","대전","울산","경기","강원","충북","충남","전북","전남","경북","경남","제주")
         val local_spinner : Spinner = findViewById(R.id.signlocal)
         val adapter : ArrayAdapter<String> = ArrayAdapter(this,android.R.layout.simple_list_item_1, local_data)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)

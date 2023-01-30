@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MypageActivity">
+    tools:context=".Mypage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,9 +51,11 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/myName"
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100sp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -61,11 +63,22 @@
                 android:textColor="@color/purple_200"
                 android:textSize="20dp"
                 android:textStyle="bold" />
-
-
             <TextView
-                android:id="@+id/myID"
+                android:id="@+id/myName"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100sp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -73,12 +86,24 @@
                 android:textColor="@color/purple_200"
                 android:textSize="20dp"
                 android:textStyle="bold" />
-
-
-            <!--생년월일-->
             <TextView
-                android:id="@+id/myBirth"
+                android:id="@+id/myID"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <!--생년월일-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100sp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -86,12 +111,22 @@
                 android:textColor="@color/purple_200"
                 android:textSize="20dp"
                 android:textStyle="bold" />
-
+                <TextView
+                    android:id="@+id/myBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <!--성별-->
-            <TextView
-                android:id="@+id/myGender"
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100sp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -100,10 +135,22 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/myGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
             <!--비밀번호-->
-            <TextView
-                android:id="@+id/myPW"
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100sp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -111,12 +158,23 @@
                 android:textColor="@color/purple_200"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+            <TextView
+                android:id="@+id/myPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
 
             <!--이메일-->
-            <TextView
-                android:id="@+id/myEmail"
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100sp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -124,12 +182,23 @@
                 android:textColor="@color/purple_200"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/myEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
 
             <!--전화번호-->
-            <TextView
-                android:id="@+id/myTel"
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100sp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -137,25 +206,32 @@
                 android:textColor="@color/purple_200"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+            <TextView
+                android:id="@+id/myTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            </LinearLayout>
 
 
 
-            <!--회원가입 버튼-->
+            <!--확인 버튼-->
             <Button
-                android:id="@+id/signupbutton"
+                android:id="@+id/mypageOk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="0dp"
-                android:text="수정완료"
+                android:text="확인"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
-
-
 
     </LinearLayout>
 </FrameLayout>

@@ -23,7 +23,7 @@ class MypageActivity : AppCompatActivity() {
             sqlitedb = dbManager.readableDatabase
 
             var cursor: Cursor
-            //ㅁcursor = sqlitedb.rawQuery("SELECT * FROM USERTABLE WHERE id = '"+ck_id+"';",null)
+            //cursor = sqlitedb.rawQuery("SELECT * FROM USERTABLE WHERE id = '"+ck_id+"';",null)
 
         }
 
