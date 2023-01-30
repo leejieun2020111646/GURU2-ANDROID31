@@ -37,7 +37,7 @@ class Ready : AppCompatActivity() {
                         if (isChecked) {
                             ck4.setOnCheckedChangeListener { _, isChecked ->
                                 if (isChecked){
-                                    val intent = Intent(this,MainActivity::class.java)
+                                    val intent = Intent(this,Register::class.java)
                                     startActivity(intent)
                                 }
                             }

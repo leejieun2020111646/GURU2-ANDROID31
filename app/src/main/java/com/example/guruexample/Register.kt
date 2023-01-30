@@ -84,8 +84,8 @@ class Register : AppCompatActivity() {
 
             Toast.makeText(this, "프로펫터에 오신 것을 환영합니다!", Toast.LENGTH_SHORT).show()
 
-            /*val intent = Intent(this, AdoptMain::class.java)
-            startActivity(intent)*/
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
         //DB연결
 
