@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         //입양 버튼 클릭 시 페이지 이동
         val BtnAdopt = findViewById<ImageButton>(R.id.imageButton1)
         BtnAdopt.setOnClickListener{
-            val intent = Intent(this,AdoptMain::class.java)
+            val intent = Intent(this,ViewActivity::class.java)
             startActivity(intent)
         }
         //커뮤니티 버튼 클릭 시 페이지 이동

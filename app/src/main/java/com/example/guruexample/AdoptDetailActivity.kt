@@ -14,10 +14,10 @@ class AdoptDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_adopt_detail)
 
-        datas = intent.getSerializableExtra("data") as AdoptData
+        //datas = intent.getSerializableExtra("data") as AdoptData
 
-        Glide.with(this).load(datas.img).into(img_profile)
-        tv_name.text = datas.name
+        //Glide.with(this).load(datas.img).into(img_profile)
+        //tv_name.text = datas.name
 
     }
 }

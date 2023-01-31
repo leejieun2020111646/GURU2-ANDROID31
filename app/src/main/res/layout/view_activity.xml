@@ -20,10 +20,11 @@
         android:id="@+id/imageView17"
         android:layout_width="463dp"
         android:layout_height="171dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/img_2"
-        tools:layout_editor_absoluteY="90dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -87,10 +88,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
         android:text="이름: 카라멜"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dog1"
-        tools:layout_editor_absoluteX="76dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -98,21 +100,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
         android:text="이름: 튜닝"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dog3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="76dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
         android:text="이름: 탐나"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dog2"
-        tools:layout_editor_absoluteX="76dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -133,7 +137,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
         app:srcCompat="@drawable/img_6"
         tools:ignore="MissingConstraints" />
 
@@ -252,8 +256,9 @@
         android:layout_height="72dp"
         android:layout_marginStart="36dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
         app:srcCompat="@drawable/dog_line"
-        tools:layout_editor_absoluteY="7dp"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

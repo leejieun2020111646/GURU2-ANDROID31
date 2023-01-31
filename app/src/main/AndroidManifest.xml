@@ -34,6 +34,12 @@
         <activity android:name=".ActivityLoading"
             android:exported="true"/>
 
+        <activity android:name=".ViewActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AdoptDetailActivity"
+            android:exported="true"/>
+
         <activity
             android:name=".Ready"
             android:exported="true" >
