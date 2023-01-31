@@ -73,6 +73,8 @@ class AdoptMain : AppCompatActivity() {
             add(AdoptData(img = R.drawable.pet_img_6_tellae, name = "텔레", age = 3, info = "-품종 : 코리안숏헤어 -성별 : 수컷 -나이 : 3개월 -체중 : 1.8kg"))
             add(AdoptData(img = R.drawable.pet_img_7_tobi, name = "토비", age = 3, info = "-품종 : 코리안숏헤어 -성별 : 수컷 -나이 : 3개월 -체중 : 1.67kg"))
 
+            //add(AdoptData(img = R.drawable.pet_img_1_caramel, name = "이름: 카라멜", age = "나이: 2세 2개월", info = "-품종 : 믹스 -성별 : 수컷 -체중 : 5.2kg"))
+
             adoptAdapter.datas = datas
             adoptAdapter.notifyDataSetChanged()
 

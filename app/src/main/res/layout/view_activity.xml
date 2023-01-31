@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DC7B53"
+    >
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="463dp"
+        android:layout_height="171dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/img_11" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="463dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@drawable/img_11" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="384dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_2"
+        tools:layout_editor_absoluteY="-10dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/dog1"
+        android:layout_width="127dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="50dp"
+        android:background="#E2DAC7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView17"
+        app:srcCompat="@drawable/img_8"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="463dp"
+        android:layout_height="171dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/img_11" />
+
+    <ImageButton
+        android:id="@+id/dog2"
+        android:layout_width="127dp"
+        android:layout_height="120dp"
+        android:background="#E2DAC7"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/img_9"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/dog3"
+        android:layout_width="127dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:background="#E2DAC7"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        app:srcCompat="@drawable/img_10"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="이름: 카라멜"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/dog1"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="이름: 튜닝"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/dog3"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="이름: 탐나"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/dog2"
+        tools:layout_editor_absoluteX="76dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
