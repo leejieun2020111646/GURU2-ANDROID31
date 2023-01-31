@@ -42,16 +42,25 @@ class AdoptAdapter(private val context: Context) : RecyclerView.Adapter<AdoptAda
         private val txtInfo: TextView = itemView.findViewById(R.id.tv_rv_info)
         private val imgProfile: ImageView = itemView.findViewById(R.id.img_rv_photo)
 
+
+
         fun bind(item: AdoptData) {
             txtName.text = item.name
             txtAge.text = item.age.toString()
             txtInfo.text = item.info
             Glide.with(itemView).load(item.img).into(imgProfile)
-            itemView.setOnClickListener {
+            /*itemView.setOnClickListener {
                 Intent(context, AdoptDetailActivity::class.java).apply {
                     putExtra("data", item)
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 }.run { context.startActivity(this) }
+            }*/
+            val pos = adapterPosition
+            if(pos!= RecyclerView.NO_POSITION)
+            {
+                itemView.setOnClickListener {
+                    listener?.onItemClick(itemView,item,pos)
+                }
             }
         }
     }

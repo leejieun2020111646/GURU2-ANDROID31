@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AdoptDetailActivity">
+    <!--리사이클러뷰 아이템을 클릭하면 나오는 상세페이지. AdoptMain 액티비티에서의 오류로 실행이 안됨-->
 
     <ImageView
         android:id="@+id/img_profile"

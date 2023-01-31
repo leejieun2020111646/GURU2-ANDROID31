@@ -59,6 +59,18 @@ class AdoptMain : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    //상세페이지로 이동하는 코드
+    //오류로 인해 실행이 안됨
+    /*adoptAdapter.setOnItemClickListener(object : AdoptAdapter.OnItemClickListener{
+        override fun onItemClick(v: View, data: AdoptData, pos : Int) {
+            Intent(this@AdoptMain, AdoptDetailActivity::class.java).apply {
+                putExtra("data", data)
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }.run { startActivity(this) }
+        }
+
+    })*/
+
     //리사이클러뷰에 들어갈 정보
     private fun initRecycler() {
         adoptAdapter = AdoptAdapter(this)

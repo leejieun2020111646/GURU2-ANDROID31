@@ -1,3 +1,6 @@
+//리사이클러뷰 아이템을 클릭하면 나오는 상세페이지
+//AdoptMain 액티비티에서의 오류로 실행이 안됨
+
 package com.example.guruexample
 
 import androidx.appcompat.app.AppCompatActivity
