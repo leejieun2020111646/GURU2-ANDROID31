@@ -31,18 +31,6 @@ class Register : AppCompatActivity() {
     lateinit var edtBir:EditText //생년월일
 
 
-    //뒤로가기 버튼 기능(공통코드)
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item?.itemId){
-            android.R.id.home -> {
-                finish()
-                return true
-            }
-            else -> {
-                return super.onOptionsItemSelected(item)
-            }
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
