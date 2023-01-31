@@ -31,37 +31,41 @@
         android:id="@+id/imageView12"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:layout_marginStart="206dp"
         android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView9"
         app:srcCompat="@drawable/img_5"
-        tools:layout_editor_absoluteX="207dp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:layout_marginStart="206dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12"
         app:srcCompat="@drawable/img_6"
-        tools:layout_editor_absoluteX="207dp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:layout_marginStart="206dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13"
         app:srcCompat="@drawable/img_10"
-        tools:layout_editor_absoluteX="207dp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:layout_marginStart="206dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView14"
         app:srcCompat="@drawable/img_11"
-        tools:layout_editor_absoluteX="207dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -129,9 +133,10 @@
         android:id="@+id/imageView35"
         android:layout_width="58dp"
         android:layout_height="50dp"
+        android:layout_marginStart="50dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ddddd"
-        tools:layout_editor_absoluteX="69dp"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

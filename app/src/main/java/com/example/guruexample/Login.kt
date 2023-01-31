@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.guruexample.databinding.ActivityMainBinding
@@ -28,7 +29,7 @@ class Login : AppCompatActivity() {
 
 
         //회원가입 버튼 클릭 시 페이지 이동(Register로 이동)
-        val BtnRegister = findViewById<Button>(R.id.btn_register)
+        val BtnRegister = findViewById<ImageButton>(R.id.btn_register)
         BtnRegister.setOnClickListener {
             val intent = Intent(this, Register::class.java)
             startActivity(intent)

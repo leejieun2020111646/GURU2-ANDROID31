@@ -72,27 +72,16 @@
             android:elevation="4dp"
             />
 
-        <ImageButton
-            android:id="@+id/membership_button"
-            android:layout_width="346dp"
-            android:layout_height="52dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="33dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="500dp"
-            android:background="@drawable/membership_button"
-            />
 
         <ImageButton
-            android:id="@+id/membership_button"
+            android:id="@+id/btn_register"
             android:layout_width="346dp"
             android:layout_height="52dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="33dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="500dp"
-            android:background="@drawable/membership_button"
-            />
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="498dp"
+            android:background="@drawable/membership_button" />
 
         <TextView
             android:layout_width="194dp"
