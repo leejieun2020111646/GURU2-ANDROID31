@@ -9,9 +9,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/Petter_foreground"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/Petter_foreground"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GuruExample"
         tools:targetApi="31">
@@ -38,31 +38,31 @@
             android:name=".Ready"
             android:exported="true" >
 
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
-
-        <activity
-            android:name=".CommunityMain"
-            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--
+                <activity
+                    android:name=".CommunityMain"
+                    android:exported="true">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
 
-        <activity
-            android:name=".CommunityView"
-            android:exported="true">
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+                </activity>
 
-        </activity>
+                <activity
+                    android:name=".CommunityView"
+                    android:exported="true">
 
-        <activity android:name=".WriteActivity"/>
+                </activity>
 
-    </application>
+                <activity android:name=".WriteActivity"/>-->
 
-</manifest>
+            </application>
+
+        </manifest>
