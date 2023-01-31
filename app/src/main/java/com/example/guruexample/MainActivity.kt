@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         //커뮤니티 버튼 클릭 시 페이지 이동
         val BtnComm = findViewById<ImageButton>(R.id.imageButton2)
         BtnComm.setOnClickListener{
+            val intent = Intent(this, CommunityActivity::class.java)
+            startActivity(intent)
 
         }
         //마이페이지 버튼 클릭 시 페이지 이동

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DC7B53"
-    tools:context=".ComunnityActivity"
+    tools:context=".CommunityActivity"
     >
 
     <ImageView

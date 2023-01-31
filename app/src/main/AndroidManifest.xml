@@ -40,6 +40,9 @@
         <activity android:name=".AdoptDetailActivity"
             android:exported="true"/>
 
+        <activity android:name=".CommunityActivity"
+            android:exported="true"/>
+
         <activity
             android:name=".Ready"
             android:exported="true" >

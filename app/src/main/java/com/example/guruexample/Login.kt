@@ -93,7 +93,7 @@ class Login : AppCompatActivity() {
                 if (get_id.equals(C_id) && get_pw.equals(C_pw)) {
                     Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
                     //로그인 성공 시 메인페이지로 이동
-                    val intent = Intent(this, AdoptMain::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 } else if (get_id.equals(C_id) == true && get_pw.equals(C_pw) == false) {
                     Toast.makeText(this, "비밀번호가 틀렸습니다", Toast.LENGTH_SHORT).show()
